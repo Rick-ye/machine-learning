@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c28d371f-88c6-4852-a93f-8d9e458751b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/part1/data/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part2/data/lenses.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part2/treePlotter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part2/trees.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/bayes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/data/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/data/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part1/kNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/kNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2/trees.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,29 @@
       <recent name="E:\python\machine-learning\part2\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.trees">
+  <component name="RunManager" selected="Python.bayes">
+    <configuration name="bayes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="machine-learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/part3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/part3/bayes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="kNN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine-learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,10 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.trees" />
-        <item itemvalue="Python.treePlotter" />
-        <item itemvalue="Python.kNN" />
+        <item itemvalue="Python.bayes" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.trees" />
+        <item itemvalue="Python.kNN" />
+        <item itemvalue="Python.treePlotter" />
       </list>
     </recent_temporary>
   </component>
@@ -162,6 +183,11 @@
       <workItem from="1584238311290" duration="3567000" />
       <workItem from="1584268051982" duration="2356000" />
       <workItem from="1584322276690" duration="15392000" />
+      <workItem from="1584412235096" duration="2207000" />
+      <workItem from="1584419957287" duration="6000" />
+      <workItem from="1584425614079" duration="1597000" />
+      <workItem from="1584429939696" duration="2784000" />
+      <workItem from="1584492196152" duration="14820000" />
     </task>
     <servers />
   </component>
@@ -173,39 +199,56 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583913737665" />
-    <state width="1323" height="53" key="GridCell.Tab.0.bottom" timestamp="1584344232786">
+    <state width="1323" height="225" key="GridCell.Tab.0.bottom" timestamp="1584521902144">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="53" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584344232786" />
-    <state width="1323" height="53" key="GridCell.Tab.0.center" timestamp="1584344232786">
+    <state width="1323" height="225" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584521902144" />
+    <state width="1323" height="225" key="GridCell.Tab.0.center" timestamp="1584521902143">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="53" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584344232786" />
-    <state width="1323" height="53" key="GridCell.Tab.0.left" timestamp="1584344232786">
+    <state width="1323" height="225" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584521902143" />
+    <state width="1323" height="225" key="GridCell.Tab.0.left" timestamp="1584521902143">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="53" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584344232786" />
-    <state width="1323" height="53" key="GridCell.Tab.0.right" timestamp="1584344232786">
+    <state width="1323" height="225" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584521902143" />
+    <state width="1323" height="225" key="GridCell.Tab.0.right" timestamp="1584521902143">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="53" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584344232786" />
+    <state width="1323" height="225" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584521902143" />
+    <state width="1323" height="228" key="GridCell.Tab.1.bottom" timestamp="1584521312502">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="228" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584521312502" />
+    <state width="1323" height="228" key="GridCell.Tab.1.center" timestamp="1584521312502">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="228" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584521312502" />
+    <state width="1323" height="228" key="GridCell.Tab.1.left" timestamp="1584521312502">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="228" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584521312502" />
+    <state width="1323" height="228" key="GridCell.Tab.1.right" timestamp="1584521312502">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="228" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584521312502" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1584338762268">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584338762268" />
-    <state x="363" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584322315437">
+    <state x="363" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584492218971">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="363" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584322315437" />
+    <state x="363" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584492218971" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1584334192216">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1584334192216" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/machine_learning$trees.coverage" NAME="trees Coverage Results" MODIFIED="1584342525922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/part2" />
+    <SUITE FILE_PATH="coverage/machine_learning$trees.coverage" NAME="trees Coverage Results" MODIFIED="1584497654933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/part2" />
     <SUITE FILE_PATH="coverage/machine_learning$treePlotter.coverage" NAME="treePlotter Coverage Results" MODIFIED="1584339574474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/part2" />
-    <SUITE FILE_PATH="coverage/machine_learning$test.coverage" NAME="test Coverage Results" MODIFIED="1584066709456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/part1/data" />
-    <SUITE FILE_PATH="coverage/machine_learning$kNN.coverage" NAME="kNN Coverage Results" MODIFIED="1584156032056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/part1" />
+    <SUITE FILE_PATH="coverage/machine_learning$bayes.coverage" NAME="bayes Coverage Results" MODIFIED="1584521902132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/part3" />
+    <SUITE FILE_PATH="coverage/machine_learning$test.coverage" NAME="test Coverage Results" MODIFIED="1584519620716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/part1/data" />
+    <SUITE FILE_PATH="coverage/machine_learning$kNN.coverage" NAME="kNN Coverage Results" MODIFIED="1584412257444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/part1" />
   </component>
 </project>

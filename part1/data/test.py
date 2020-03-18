@@ -13,7 +13,7 @@ if __name__ == '__main__':
     # print(tile)
 
     data = numpy.array([[1, 2, 5], [2, 3, 5], [3, 4, 5], [2, 3, 6]])
-    data2= numpy.array([[1, 3, 2], [1, 4, 6], [4, 1, 9], [4, 6, 3]])
+    data2 = numpy.array([[1, 3, 2], [1, 4, 6], [4, 1, 9], [4, 6, 3]])
     # print(data[:, 1])
     # print(data[1, :])
     # size = data.shape[0]
@@ -30,3 +30,12 @@ if __name__ == '__main__':
 
     print(data.min(0))
     print(data.max(0))
+
+    print(len(data), len(data[0]), sum(data))
+
+    list = ['soft', 'hard', 'soft', 'hard', 'soft', 'hard', 'soft', 'no lenses', 'no lenses', 'hard', 'soft',
+            'no lenses']
+    list = set(list)
+    print(list)
+
+

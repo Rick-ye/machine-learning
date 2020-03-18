@@ -159,8 +159,8 @@ def handWritingClassTest():
 
 
 if __name__ == '__main__':
-    # datingClassTest()
-    handWritingClassTest()
+    datingClassTest()
+    # handWritingClassTest()
 
     # group, labels = createDataSet()
     # sort = classify0([0, 2], group, labels, 3)

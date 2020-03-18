@@ -15,6 +15,11 @@ def createDataSet():
 
 
 def calcShannonEnt(dataSet):
+    """
+    计算香浓熵
+    :param dataSet:
+    :return:
+    """
     numEntries = len(dataSet)
     labelCounts = {}
     for featVec in dataSet:  # the the number of unique elements and their occurance
@@ -29,6 +34,13 @@ def calcShannonEnt(dataSet):
 
 
 def splitDataSet(dataSet, axis, value):
+    """
+    切分数据集
+    :param dataSet:
+    :param axis:
+    :param value:
+    :return:
+    """
     retDataSet = []
     for featVec in dataSet:
         if featVec[axis] == value:
