@@ -36,9 +36,9 @@ def calcShannonEnt(dataSet):
 def splitDataSet(dataSet, axis, value):
     """
     切分数据集
-    :param dataSet:
-    :param axis:
-    :param value:
+    :param dataSet: 待划分的数据集
+    :param axis: 划分数据集的特征
+    :param value: 给定特征值
     :return:
     """
     retDataSet = []
@@ -124,10 +124,19 @@ def grabTree(filename):
 
 
 if __name__ == '__main__':
+    # 使用决策树预测隐形眼镜类型
+    fr = open('./data/lenses.txt')
+    lenses = [inst.strip().split('\t') for inst in fr.readlines()]
+    lensesLabels = ['age', 'prescript', 'astigmatic', 'tearRate']
+    lensesTree = createTree(lenses, lensesLabels)
+    print(lensesTree)
+    createPlot(lensesTree)
+
     # dataSet, labels = createDataSet()
     # featVec = splitDataSet(dataSet, 0, 1)
     # dataSet[0][-1] = 'maybe'
-    # shannonEnt = chooseBestFeatureToSplit(dataSet)
+    # shannonEnt = calcShannonEnt(dataSet)
+    # print(shannonEnt)
     # myTree = retrieveTree(0)
     # result = classfiy(myTree, labels, [1, 1])
     # print(result)
@@ -136,10 +145,4 @@ if __name__ == '__main__':
     # storeTree(myTree, 'classifierStorage.txt')
     # print(grabTree('classifierStorage.txt'))
 
-    # 使用决策树预测隐形眼镜类型
-    fr = open('./data/lenses.txt')
-    lenses = [inst.strip().split('\t') for inst in fr.readlines()]
-    lensesLabels = ['age', 'prescript', 'astigmatic', 'tearRate']
-    lensesTree = createTree(lenses, lensesLabels)
-    print(lensesTree)
-    createPlot(lensesTree)
+
